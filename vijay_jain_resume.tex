@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{inputenc}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeMultipleSubheading}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Vijay Jain}} & Email : \href{mailto:v.jain199@gmail.com}{v.jain199@gmail.com}\\
+  Mobile : +1-408-718-5970 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology}{Guwahati, India}
+      {Bachelor of Computer Science and Engineering;}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Yahoo}{Sunnyvale, CA} 
+      {Software Engineer III}{March 2017 - Present}
+      \resumeItemListStart
+        \resumeItem {GDPR Compliance detection}
+        {
+        As Part of GDPR (General Data Protection Regulations), Any vendor, collecting personal data using ads, has to be compliant with GDPR regulations as well, We detected different vendors who were liable for compliance within ad and certified the ad for gdpr complaint based on each vendor's compliance. This feature required a great deal of cross-team collaboration, We worked with legal, policy and different ad exchanges within Yahoo to layout the framework to be able to serve compliant Ads.
+        }
+        \resumeItem {Creative Tester}
+        {
+        For Automating the creative review process, We built a containerized horizontally scalable application
+        \begin{itemize}
+            \item The application interacts with a given HTML page and mimics different user actions on them.
+            \item The application also support different profiles, allows the application to work with different platforms e.g. mobile browsers, in-app and on desktop platform.
+            \item The application vet the creative against different policies and provide a detailed classification of the downloaded creative. 
+        \end{itemize}
+        }
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Yahoo}{Sunnyvale, CA} 
+      {Software Engineer II}{April 2014 - March 2017}
+      \resumeItemListStart
+        \resumeItem {Streaming Workflows}
+          {Designed and built a new workflow system on storm to be able to meet the scaling requirements of multiple Ad Platforms}
+        \resumeItem {Interactive Video Ads} 
+          {Built a Javascript based solution to render HTML5 video ads, Which allowed Yahoo the ability to serve VPAID ads on mobile, tablet and desktop. This wrapper also handles different viewability and measurability providers for campaign analytics}
+      \resumeItemListEnd
+        
+    \resumeSubheading
+      {Yahoo}{Bangalore, India} 
+      {Software Engineer}{July 2012 - April 2014}
+      \resumeItemListStart
+        \resumeItem {Trust and Verification}
+        {Worked in the Trust and Verification Team in the Ad Platforms Group to build and enhance systems to test and detect features of the ads trafficked by Yahoo, including scanning the ads for malicious intent.}
+        \resumeItem {Manual Review tool}
+        {Led a team to build a web application for efficiently manually reviewing ads using Jersey, Jetty and Ember.js
+        \begin{itemize}
+            \item latest policies of different platforms (Text-in-Image, informative tags),
+            \item Enhance editorial team’s performance (Language preferences to editorial team, Features to perform at large scale, advance search, alert for items near to missing SLAs),
+        \end{itemize}
+        }
+      \resumeItemListEnd
+    \resumeSubheading
+      {INS, University of Applied Science} {Rapperwil, Switzerland}
+      {Internship} {May 2011 - July 2011}
+      \resumeItemListStart
+        \resumeItem {Remote Lab Management}
+          {
+          Worked on ‘Expansion of functionality in Remote Lab management’ at INS Switzerland. The work was to manage several devices like routers, switches using a web interface.
+          }
+        \resumeItem {Application Development} {
+           \begin{itemize} 
+              \item Developed new features for a web application with Symfony framework and expect scripting. 
+              \item Implemented online module from which user can save or restore his work on the devices.
+          \end{itemize}
+        }
+      \resumeItemListEnd
+       
+      
+    
+ 
+
+
+  \resumeSubHeadingListEnd
+
+%-----------Programming Skills-----------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Technologies}
+      {Hadoop, Storm, Node.js, Ember.js, Jersey, Message Queues, Docker}
+    \resumeSubItem{Languages}
+      {Java, Javascript, SQL}
+    \resumeSubItem{Miscellaneous}
+      {: Git, Svn, Sauce Labs, Continuous Delivery}
+  \resumeSubHeadingListEnd
+
+\end{document}
